@@ -224,7 +224,7 @@ thead tr {
 tbody tr {
     display: flex;
     justify-content: space-between;
-    margin: ;
+    /* margin: ; */
 }
 
 #input-btn {
