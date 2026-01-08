@@ -162,6 +162,15 @@ body {
     padding: 48px 24px 20px;
     border: 0.5px solid rgba(0, 0, 0, 0.153);
     border-radius: 16px;
+    position: relative;
+}
+
+.quote-icon {
+    font-size: 70px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    color: #0E0E0E30;
 }
 
 /* table section */
@@ -172,7 +181,7 @@ body {
     /* background-color: aqua; */
 }
 
-.table-container .common-main-heading {
+.table-container h3 {
     padding-bottom: 24px;
 }
 
@@ -185,11 +194,12 @@ body {
 
 table {
     border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-table,
-th,
-td {
+table, td{
     border: 0.5px solid #0E0E0E;
 }
 
@@ -205,6 +215,18 @@ thead {
     background-color: #C6E4D6;
 }
 
+thead tr {
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+}
+
+tbody tr {
+    display: flex;
+    justify-content: space-between;
+    margin: ;
+}
+
 #input-btn {
     background-color: #C6E4D6;
     padding: 12px;
@@ -216,6 +238,10 @@ thead {
     max-width: 1140px;
     margin: 0 auto;
     margin-top: 80px;
+}
+
+.news-heading h3 {
+    padding-bottom: 24px;
 }
 
 .news-heading p {
@@ -235,7 +261,7 @@ thead {
     /* border: 1px solid red; */
     margin: 40px 40px;
     border-radius: 16px;
-    
+
     /* padding-top: 32px; */
 }
 
@@ -355,6 +381,36 @@ thead {
     background-color: #C6E4D6;
     border-radius: 16px;
 }
+
+.sub-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+    margin-top: 0px;
+}
+
+.sub-input .email-box {
+    background-color: #FFFFFF;
+    font-size: 16px;
+    border-style: none;
+    padding: 18px 40px;
+    border-radius: 8px 0 0 8px;
+    color: #0E0E0E30;
+}
+
+.sub-input .email-btn {
+    font-size: 18px;
+    background-color: #006A50;
+    color: #FFFFFF;
+    border-radius: 0 8px 8px 0;
+    padding: 17px 34px;
+    border-style: none;
+
+}
+
+
+
+
 
 /* footer section */
 .footer-container {
