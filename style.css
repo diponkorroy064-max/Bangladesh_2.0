@@ -29,10 +29,17 @@ body {
     margin: 24px 70px 24px 0;
     font-size: 18px;
     font-weight: bolder;
-    color: #006A50;
-    border: 1px solid #006A50;
+    background-color: #006A50;
+    color: #FFFFFF;
+    border-style: none;
     border-radius: 6px;
     padding: 12px;
+}
+
+.btn:hover {
+    background-color: #FFFFFF;
+    color: #006A50;
+    cursor: pointer;
 }
 
 .common-heading {
@@ -226,8 +233,9 @@ thead {
 
 .news-img img {
     /* border: 1px solid red; */
-    border-radius: 16px;
     margin: 40px 40px;
+    border-radius: 16px;
+    
     /* padding-top: 32px; */
 }
 
@@ -258,4 +266,117 @@ thead {
 
 #left-news-txt {
     padding-left: 48px;
+}
+
+/* Donate section */
+.donate-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 80px;
+    /* background-color: aqua; */
+}
+
+.donate-cards {
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+/* same heading & paragraph */
+.same-heading {
+    font-size: 40px;
+    font-weight: bold;
+    color: #0E0E0E;
+    text-align: center;
+    padding-bottom: 24px;
+
+}
+
+.same-para {
+    font-size: 16px;
+    color: #0E0E0E70;
+    text-align: center;
+    /* background-color: #5490F5; */
+    margin: 0 50px;
+    padding-bottom: 32px;
+}
+
+.common-donate {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    border: 0.5px solid rgba(0, 0, 0, 0.153);
+}
+
+.common-donate h3 {
+    padding: 40px 40px;
+}
+
+.amounts {
+    background-color: #FFFFFF;
+    margin: 0 124px;
+}
+
+.amounts p {
+    padding: 20px 40px;
+    color: #0E0E0E30;
+}
+
+/* same button */
+.same-btn {
+    /* margin: 0 auto; */
+    text-align: center;
+    margin-top: 32px;
+}
+
+.same-btn button {
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: #006A50;
+    color: #FFFFFF;
+    border-style: none;
+    border-radius: 8px;
+    padding: 17px 34px;
+}
+
+.same-btn button:hover {
+    background-color: #FFFFFF;
+    color: #006A50;
+    cursor: pointer;
+}
+
+/* subscribe section */
+.subscribe-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 80px 185px;
+    background-color: #C6E4D6;
+    border-radius: 16px;
+}
+
+/* footer section */
+.footer-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    margin-top: 80px;
+    background-color: #FFFFFF;
+}
+
+.footer-container h4 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0E0E0E;
+    padding-top: 50px;
+    padding-bottom: 64px;
+    text-align: center;
+}
+
+.footer-img {
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+    padding-bottom: 50px;
 }
