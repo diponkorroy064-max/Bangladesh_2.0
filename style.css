@@ -176,6 +176,7 @@ body {
 /* table section */
 .table-container {
     max-width: 1140px;
+    /* border: 2px solid red; */
     margin: 0 auto;
     margin-top: 80px;
     /* background-color: aqua; */
@@ -218,19 +219,25 @@ thead {
 thead tr {
     display: flex;
     justify-content: space-between;
+    /* align-items: center; */
     gap: 0px;
 }
 
 tbody tr {
     display: flex;
     justify-content: space-between;
+    /* align-items: center; */
     /* margin: ; */
 }
 
-#input-btn {
+.input-btn {
     background-color: #C6E4D6;
-    padding: 12px;
+    padding: 12px 40px;
     border-radius: 4px;
+}
+
+.tbl-dta{
+    padding-right: 160px;
 }
 
 /* news section */
