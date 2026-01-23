@@ -9,24 +9,8 @@ body {
     background-color: rgba(0, 0, 0, 0.034);
 }
 
-.header-container {
-    max-width: 1600px;
-    display: flex;
-    justify-content: space-between;
-    /* margin: 0 auto; */
-    /* background:#FFFFFF; */
-}
-
-.header-logo h4 {
-    margin: 31px 0 31px 70px;
-    font-size: 32px;
-    font-weight: bold;
-    color: #0E0E0E;
-}
-
-/* common class */
+/*--- common class ---/--- shared styles---*/
 .btn {
-    margin: 24px 70px 24px 0;
     font-size: 18px;
     font-weight: bolder;
     background-color: #006A50;
@@ -40,6 +24,7 @@ body {
     background-color: #FFFFFF;
     color: #006A50;
     cursor: pointer;
+    border: 0.6px solid rgba(0, 0, 0, 0.306);
 }
 
 .common-heading {
@@ -66,25 +51,33 @@ body {
     margin-top: 24px;
 }
 
-
-/* hero section */
-.hero-container {
-    background-color: #C6E4D6;
-    max-width: 1140px;
-    border-radius: 16px;
+/* Header Section related styles */
+.header-container {
+    max-width: 90vw;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+    padding: 31px 0;
+}
+
+.header-logo h4 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0E0E0E;
+}
+
+
+/*--- Hero Section related styles ---*/
+.hero-container {
+    background-color: #C6E4D6;
+    max-width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 64px;
-}
-
-.hero-txt {
-    padding: 117px 0 197px 60px;
-}
-
-.hero-txt p {
-    color: #180a0a4e;
-    font-size: 24px;
-    padding-bottom: 10px;
+    border-radius: 16px;
+    padding: 80px 60px;
 }
 
 .hero-txt h2 {
@@ -94,13 +87,16 @@ body {
     padding-bottom: 10px;
 }
 
-.hero-img {
-    padding: 80px 60px 80px 0;
+.hero-txt p {
+    color: #180a0a77;
+    font-size: 24px;
+    padding-bottom: 10px;
 }
 
-/* piller section */
+
+/*--- Piller Section Related Styles ---*/
 .piller-container {
-    max-width: 1140px;
+    max-width: 90vw;
     margin: 0 auto;
     margin-top: 80px;
 }
@@ -111,6 +107,7 @@ body {
 
 .piller-card {
     display: flex;
+    justify-content: center;
     gap: 24px;
 }
 
@@ -119,15 +116,16 @@ body {
     border-radius: 16px;
 }
 
-/* vision section */
+/*---- Vision section related styles ----*/
 .vision-container {
-    max-width: 1140px;
+    max-width: 90vw;
     margin: 0 auto;
     margin-top: 80px;
 }
 
 .vision-card {
     display: flex;
+    justify-content: center;
     gap: 24px;
 }
 
@@ -154,6 +152,7 @@ body {
 .cards button {
     margin-left: 24px;
     margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .vision-txt {
@@ -173,10 +172,9 @@ body {
     color: #0E0E0E30;
 }
 
-/* table section */
+/*----- table section  related styles ------*/
 .table-container {
-    max-width: 1140px;
-    /* border: 2px solid red; */
+    max-width: 90vw;
     margin: 0 auto;
     margin-top: 80px;
     /* background-color: aqua; */
@@ -195,19 +193,17 @@ body {
 
 table {
     border-collapse: collapse;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
 }
 
-table, td{
+table,
+td {
     border: 0.5px solid #0E0E0E;
 }
 
-th {
-    padding: 24px;
-}
-
+th,
 td {
     padding: 24px 36.5px;
 }
@@ -219,15 +215,11 @@ thead {
 thead tr {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
-    gap: 0px;
 }
 
 tbody tr {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
-    /* margin: ; */
 }
 
 .input-btn {
@@ -236,13 +228,13 @@ tbody tr {
     border-radius: 4px;
 }
 
-.tbl-dta{
+.tbl-dta {
     padding-right: 160px;
 }
 
-/* news section */
+/*---- news section related styles ---*/
 .news-container {
-    max-width: 1140px;
+    max-width: 90vw;
     margin: 0 auto;
     margin-top: 80px;
 }
@@ -265,11 +257,8 @@ tbody tr {
 }
 
 .news-img img {
-    /* border: 1px solid red; */
-    margin: 40px 40px;
+    margin: 40px;
     border-radius: 16px;
-
-    /* padding-top: 32px; */
 }
 
 .news-txt {
@@ -292,7 +281,7 @@ tbody tr {
 }
 
 .news-txt button {
-    padding: 5px;
+    padding: 13px 26px;
     border-radius: 4px;
     font-size: 14px;
 }
@@ -301,12 +290,11 @@ tbody tr {
     padding-left: 48px;
 }
 
-/* Donate section */
+/*----- Donate section related styles -----*/
 .donate-container {
-    max-width: 1140px;
+    max-width: 90vw;
     margin: 0 auto;
     margin-top: 80px;
-    /* background-color: aqua; */
 }
 
 .donate-cards {
@@ -379,12 +367,12 @@ tbody tr {
     cursor: pointer;
 }
 
-/* subscribe section */
+/*---- subscribe section related styles ----*/
 .subscribe-container {
-    max-width: 1140px;
+    max-width: 90vw;
     margin: 0 auto;
     margin-top: 80px;
-    padding: 80px 185px;
+    padding-top: 80px;
     background-color: #C6E4D6;
     border-radius: 16px;
 }
@@ -415,31 +403,138 @@ tbody tr {
 
 }
 
-
-
-
-
-/* footer section */
+/* footer section relaated styles */
 .footer-container {
-    max-width: 1600px;
+    max-width: 100%;
     margin: 0 auto;
     margin-top: 80px;
     background-color: #FFFFFF;
 }
 
 .footer-container h4 {
+    max-width: 80vw;
+    margin: 0 auto;
     font-size: 32px;
     font-weight: bold;
     color: #0E0E0E;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.347);
     padding-top: 50px;
-    padding-bottom: 64px;
+    padding-bottom: 32px;
     text-align: center;
 }
 
 .footer-img {
-    /* text-align: center; */
     display: flex;
     justify-content: center;
     gap: 23px;
+    padding-top: 32px;
     padding-bottom: 50px;
+}
+
+/* responsive related styles */
+.hide {
+    display: none !important;
+}
+
+/* responsive for (max-width: 576px) */
+@media screen and (max-width: 576px) {
+    .header-logo h4 {
+        font-size: 26px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 40px 20px;
+    }
+
+    .hero-txt h2 {
+        font-size: 36px;
+    }
+
+    .piller-container h3 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .piller-card {
+        flex-direction: column;
+    }
+
+    .vision-card {
+        flex-direction: column;
+    }
+
+
+
+
+
+    
+
+
+
+    .news-heading {
+        text-align: center;
+    }
+
+    .news-card {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .news-img {
+        margin: 30px auto;
+    }
+
+    .news-img img {
+        max-width: 75vw;
+        margin: 0 auto;
+    }
+
+    .news-txt {
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    .donate-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .amounts .same-para {
+        margin: 20px auto;
+    }
+
+    .same-heading {
+        font-size: 35px;
+    }
+
+    .sub-input .email-box {
+        font-size: 12px;
+        padding: 12px 20px;
+    }
+
+    .sub-input .email-btn {
+        font-size: 12px;
+        padding: 12px 20px;
+    }
+
+    .footer-container h4 {
+        font-size: 26px;
+    }
+
+
+}
+
+
+/* responsive for (max-width: 576px) */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+
+    .news-card {
+        flex-direction: column;
+        justify-content: center;
+        /* margin: 50px auto; */
+    }
+
 }
