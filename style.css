@@ -193,9 +193,6 @@ body {
 
 table {
     border-collapse: collapse;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
 }
 
 table,
@@ -403,7 +400,7 @@ tbody tr {
 
 }
 
-/* footer section relaated styles */
+/*----- footer section relaated styles -----*/
 .footer-container {
     max-width: 100%;
     margin: 0 auto;
@@ -438,6 +435,11 @@ tbody tr {
 
 /* responsive for (max-width: 576px) */
 @media screen and (max-width: 576px) {
+    .common-main-heading {
+        text-align: center;
+        font-size: 30px;
+    }
+
     .header-logo h4 {
         font-size: 26px;
     }
@@ -465,13 +467,15 @@ tbody tr {
         flex-direction: column;
     }
 
+    .input-btn {
 
+        padding: 10px;
+        border-radius: 4px;
+    }
 
-
-
-    
-
-
+    .tbl-dta {
+        padding-right: 10px;
+    }
 
     .news-heading {
         text-align: center;
@@ -524,17 +528,54 @@ tbody tr {
         font-size: 26px;
     }
 
-
 }
 
 
 /* responsive for (max-width: 576px) */
 @media screen and (min-width: 577px) and (max-width: 992px) {
 
+    .common-main-heading,
+    .common-pera {
+        text-align: center;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 40px 20px;
+    }
+
+    .piller-card {
+        flex-direction: column;
+    }
+
+    .vision-card {
+        flex-direction: column;
+    }
+
+
+    .tbl-dta {
+        padding-right: 60px;
+    }
+
+
+    .news-heading {
+        text-align: center;
+    }
+
     .news-card {
         flex-direction: column;
         justify-content: center;
-        /* margin: 50px auto; */
+    }
+
+    .news-txt {
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    .donate-cards {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
 }
